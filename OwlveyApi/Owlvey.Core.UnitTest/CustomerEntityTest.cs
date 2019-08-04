@@ -1,3 +1,4 @@
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Owlvey.Core.UnitTest
@@ -8,9 +9,11 @@ namespace Owlvey.Core.UnitTest
         [TestMethod]
         public void MaintenanceCustomerEntity()
         {
-            CustomerEntity entity = CustomerEntity.Create("test");
+            CustomerEntity entity = new CustomerEntity();
+            entity.Create("test", DateTime.Now);
             Assert.IsNotNull(entity);
-        }        
+        }
+
         
     }
 }

@@ -6,7 +6,11 @@ namespace Owlvey.Core
 {
     public class SquadEntity: BaseEntity
     {
-        public string Name { get; set; }
+        public string Name { get; protected set; }
+        public string Description { get; protected set; }
+        public string Avatar { get; protected set; }
+
+        public virtual ICollection<UserEntity> Users { get; set; }
 
     }
 }

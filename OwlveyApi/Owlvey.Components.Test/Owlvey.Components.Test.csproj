@@ -1,5 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
 
@@ -11,14 +10,7 @@
     <PackageReference Include="MSTest.TestAdapter" Version="1.3.2" />
     <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
   </ItemGroup>
-
   <ItemGroup>
-    <ProjectReference Include="..\Owlvey.Adapters\Owlvey.Adapters.csproj" />
-    <ProjectReference Include="..\Owlvey.Core\Owlvey.Core.csproj" />
+    <ProjectReference Include="..\Owlvey.Components\Owlvey.Components.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
-  </ItemGroup>
-
 </Project>

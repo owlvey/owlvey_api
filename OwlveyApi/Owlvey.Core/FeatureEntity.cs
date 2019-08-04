@@ -6,6 +6,9 @@ namespace Owlvey.Core
 {
     public class FeatureEntity: BaseEntity
     {
+        public string Name { get; set; }
+        public string Avatar { get; set; }
 
+        public virtual ICollection<JournalEntity> JournalEntities { get; set; }
     }
 }
